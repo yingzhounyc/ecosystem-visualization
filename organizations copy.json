@@ -1,0 +1,168 @@
+{
+  "organizations": [
+    {
+      "id": "org1",
+      "name": "Tech Innovation Hub",
+      "contactPerson": "Sarah Johnson",
+      "email": "sarah.johnson@techhub.org",
+      "address": "123 Innovation Drive, Silicon Valley, CA 94000",
+      "type": "corporation",
+      "description": "Leading technology innovation center"
+    },
+    {
+      "id": "org2",
+      "name": "Stanford University",
+      "contactPerson": "Dr. Michael Chen",
+      "email": "mchen@stanford.edu",
+      "address": "450 Serra Mall, Stanford, CA 94305",
+      "type": "higher_ed",
+      "description": "Prestigious research university"
+    },
+    {
+      "id": "org3",
+      "name": "Green Future Foundation",
+      "contactPerson": "Emily Rodriguez",
+      "email": "emily@greenfuture.org",
+      "address": "456 Environmental Ave, San Francisco, CA 94102",
+      "type": "non_profit",
+      "description": "Environmental sustainability advocacy"
+    },
+    {
+      "id": "org4",
+      "name": "Department of Energy",
+      "contactPerson": "James Wilson",
+      "email": "james.wilson@energy.gov",
+      "address": "1000 Independence Ave SW, Washington, DC 20585",
+      "type": "government_agency",
+      "description": "Federal energy policy and research"
+    },
+    {
+      "id": "org5",
+      "name": "MIT",
+      "contactPerson": "Dr. Lisa Park",
+      "email": "lpark@mit.edu",
+      "address": "77 Massachusetts Ave, Cambridge, MA 02139",
+      "type": "higher_ed",
+      "description": "Massachusetts Institute of Technology"
+    },
+    {
+      "id": "org6",
+      "name": "CleanTech Ventures",
+      "contactPerson": "David Kim",
+      "email": "david@cleantechventures.com",
+      "address": "789 Venture Capital Blvd, Boston, MA 02110",
+      "type": "corporation",
+      "description": "Venture capital for clean technology"
+    },
+    {
+      "id": "org7",
+      "name": "World Health Organization",
+      "contactPerson": "Dr. Maria Santos",
+      "email": "santosm@who.int",
+      "address": "Avenue Appia 20, 1211 Geneva, Switzerland",
+      "type": "international_org",
+      "description": "Global health organization"
+    },
+    {
+      "id": "org8",
+      "name": "Berkeley Lab",
+      "contactPerson": "Dr. Robert Taylor",
+      "email": "rtaylor@lbl.gov",
+      "address": "1 Cyclotron Rd, Berkeley, CA 94720",
+      "type": "government_agency",
+      "description": "Lawrence Berkeley National Laboratory"
+    },
+    {
+      "id": "org9",
+      "name": "Gates Foundation",
+      "contactPerson": "Jennifer Adams",
+      "email": "jennifer@gatesfoundation.org",
+      "address": "440 5th Ave S, Seattle, WA 98109",
+      "type": "non_profit",
+      "description": "Global health and development foundation"
+    },
+    {
+      "id": "org10",
+      "name": "Tesla Inc.",
+      "contactPerson": "Alex Morgan",
+      "email": "alex.morgan@tesla.com",
+      "address": "1 Tesla Rd, Austin, TX 78725",
+      "type": "corporation",
+      "description": "Electric vehicle and clean energy company"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "org1",
+      "target": "org2",
+      "type": "research_partnership",
+      "description": "Joint research initiatives in AI and robotics"
+    },
+    {
+      "source": "org1",
+      "target": "org3",
+      "type": "sustainability_collaboration",
+      "description": "Green technology development partnership"
+    },
+    {
+      "source": "org2",
+      "target": "org5",
+      "type": "academic_collaboration",
+      "description": "Student exchange and research programs"
+    },
+    {
+      "source": "org3",
+      "target": "org4",
+      "type": "policy_advocacy",
+      "description": "Environmental policy recommendations"
+    },
+    {
+      "source": "org4",
+      "target": "org8",
+      "type": "funding_relationship",
+      "description": "Federal research funding and oversight"
+    },
+    {
+      "source": "org5",
+      "target": "org6",
+      "type": "technology_transfer",
+      "description": "MIT research commercialization"
+    },
+    {
+      "source": "org6",
+      "target": "org10",
+      "type": "investment_relationship",
+      "description": "Venture capital investment in clean tech"
+    },
+    {
+      "source": "org7",
+      "target": "org9",
+      "type": "global_health_partnership",
+      "description": "International health initiatives"
+    },
+    {
+      "source": "org8",
+      "target": "org10",
+      "type": "research_collaboration",
+      "description": "Battery technology research partnership"
+    },
+    {
+      "source": "org9",
+      "target": "org2",
+      "type": "funding_relationship",
+      "description": "Global health research funding"
+    },
+    {
+      "source": "org2",
+      "target": "org8",
+      "type": "research_collaboration",
+      "description": "Joint energy research projects"
+    },
+    {
+      "source": "org3",
+      "target": "org6",
+      "type": "sustainability_partnership",
+      "description": "Clean technology advocacy and funding"
+    }
+  ]
+}
