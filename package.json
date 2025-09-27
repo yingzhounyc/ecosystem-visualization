@@ -1,0 +1,20 @@
+{
+  "name": "ecosystem",
+  "version": "1.0.0",
+  "description": "A beautiful, interactive network visualization tool that displays organizations and their relationships as nodes and edges in a dynamic graph.",
+  "main": "list-view.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yingzhounyc/ecosystem-visualization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yingzhounyc/ecosystem-visualization/issues"
+  },
+  "homepage": "https://github.com/yingzhounyc/ecosystem-visualization#readme"
+}
