@@ -109,6 +109,15 @@ body {
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
+.btn-secondary {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
 .visualization-container {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;

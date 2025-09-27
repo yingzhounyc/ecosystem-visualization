@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem List View</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="list-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Ecosystem Organizations</h1>
+            <p>Browse and search through all organizations</p>
+        </header>
+        
+        <div class="search-filter-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search organizations, contacts, or descriptions...">
+                <button id="clearSearch" class="btn-clear">×</button>
+            </div>
+            
+            <div class="filter-controls">
+                <select id="typeFilter">
+                    <option value="">All Types</option>
+                    <option value="corporation">Corporation</option>
+                    <option value="higher_ed">Higher Education</option>
+                    <option value="non_profit">Non-Profit</option>
+                    <option value="government_agency">Government Agency</option>
+                    <option value="international_org">International Organization</option>
+                </select>
+                
+                <select id="sortBy">
+                    <option value="name">Sort by Name</option>
+                    <option value="type">Sort by Type</option>
+                    <option value="contact">Sort by Contact</option>
+                </select>
+                
+                <button id="networkView" class="btn btn-secondary">Network View</button>
+            </div>
+        </div>
+        
+        <div class="results-info">
+            <span id="resultsCount">Loading organizations...</span>
+        </div>
+        
+        <div class="organizations-list" id="organizationsList">
+            <!-- Organizations will be dynamically loaded here -->
+        </div>
+    </div>
+    
+    <!-- Organization Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Organization Details</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Organization details will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="list-view.js"></script>
+</body>
+</html>

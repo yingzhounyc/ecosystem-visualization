@@ -179,6 +179,11 @@ function setupEventListeners() {
         nodeLabels.transition().duration(300)
             .style('opacity', showLabels ? 1 : 0);
     });
+    
+    // List view button
+    d3.select('#listView').on('click', function() {
+        window.location.href = 'list-view.html';
+    });
 }
 
 function showTooltip(event, d, type) {
