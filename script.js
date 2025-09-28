@@ -13,6 +13,7 @@ const colorScheme = {
     higher_ed: '#3498db',
     non_profit: '#2ecc71',
     government_agency: '#f39c12',
+    category: '#8e44ad', // Purple for categories
 };
 
 // Initialize the application
@@ -90,7 +91,13 @@ function createNetwork() {
         .data(data.organizations)
         .enter().append('circle')
         .attr('class', 'node')
-        .attr('r', nodeSize)
+        .attr('r', d => {
+            const radius = d.type === 'category' ? nodeSize * 1.3 : nodeSize;
+            if (d.type === 'category') {
+                console.log('Category node:', d.name, 'radius:', radius);
+            }
+            return radius;
+        })
         .attr('fill', d => colorScheme[d.type] || '#95a5a6')
         .attr('stroke', '#fff')
         .attr('stroke-width', 2)
@@ -174,7 +181,13 @@ function setupEventListeners() {
     // Node size control
     d3.select('#nodeSize').on('input', function() {
         nodeSize = +this.value;
-        nodes.attr('r', nodeSize);
+        nodes.attr('r', d => {
+            const radius = d.type === 'category' ? nodeSize * 1.4 : nodeSize;
+            if (d.type === 'category') {
+                console.log('Updating category node:', d.name, 'radius:', radius);
+            }
+            return radius;
+        });
         nodeLabels.attr('dy', nodeSize + 15);
         simulation.force('collision').radius(nodeSize + 5);
         simulation.alpha(0.3).restart();

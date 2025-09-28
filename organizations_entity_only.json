@@ -11,15 +11,7 @@
       "type": "higher_ed",
       "description": "Tech Incubator at Queens College provides access to innovation and technology support, training, and resources for entrepreneurs",
       "tags": [
-        "incubator",
-        "education",
-        "entrepreneurship",
-        "internship",
-        "mentoring",
-        "technology",
-        "innovation",
-        "prototyping",
-        "co-working"
+        "incubator", "education", "entrepreneurship", "internship", "mentoring", "technology", "innovation", "prototyping", "co-working"
       ]
     },
     {
@@ -376,7 +368,7 @@
         "communication",
         "leadership",
         "public speaking",
-        "trainging"
+        "trainging"      
       ]
     },
     {
@@ -393,7 +385,7 @@
         "business",
         "training",
         "entrepreneurship",
-        "mentoring"
+        "mentoring"      
       ]
     },
     {
@@ -410,7 +402,7 @@
         "business development",
         "strategy",
         "project management",
-        "consulting"
+        "consulting"      
       ]
     },
     {
@@ -462,39 +454,75 @@
         "investment",
         "entrepreneurship"
       ]
-    },
-    {
-      "id": "cat_entrepreneurs",
-      "name": "Entrepreneurs & Small Businesses",
-      "type": "category"
-    },
-    {
-      "id": "cat_education",
-      "name": "Education & Talent",
-      "type": "category"
-    },
-    {
-      "id": "cat_corporates",
-      "name": "Corporates & Industry",
-      "type": "category"
-    },
-    {
-      "id": "cat_government",
-      "name": "Government & Public Agencies",
-      "type": "category"
-    },
-    {
-      "id": "cat_nonprofits",
-      "name": "Non-profits & Community Orgs",
-      "type": "category"
-    },
-    {
-      "id": "cat_investors",
-      "name": "Investors & Funders",
-      "type": "category"
     }
   ],
   "relationships": [
+    {
+      "source": "org1",
+      "target": "org2",
+      "type": "innovation_partnership",
+      "description": "Joint support for commercializing technologies"
+    },
+    {
+      "source": "org1",
+      "target": "org3",
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
+    },
+    {
+      "source": "org1",
+      "target": "org4",
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
+    },
+    {
+      "source": "org1",
+      "target": "org5",
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
+    },
+    {
+      "source": "org6",
+      "target": "org1",
+      "type": "funding_relationship",
+      "description": "Joint support for business development"
+    },
+    {
+      "source": "org7",
+      "target": "org1",
+      "type": "funding_relationship",
+      "description": "Joint support for business development"
+    },
+    {
+      "source": "org1",
+      "target": "org8",
+      "type": "collaboration_partnership",
+      "description": "Joint support for entrepreneurs"
+    },
+    {
+      "source": "org1",
+      "target": "org9",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org1",
+      "target": "org10",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org1",
+      "target": "org11",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org1",
+      "target": "org12",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
     {
       "source": "org12",
       "target": "org11",
@@ -521,7 +549,91 @@
     },
     {
       "source": "org14",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org15",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org16",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org17",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org18",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org19",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org20",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org14",
       "target": "org20",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org21",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org22",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org23",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org99",
+      "target": "org1",
+      "type": "investment_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org24",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org25",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org26",
+      "target": "org1",
       "type": "collaboration_partnership",
       "description": "joint support for entrepreneurs"
     },
@@ -530,198 +642,6 @@
       "target": "org3",
       "type": "funding_relationship",
       "description": "joint support for entrepreneurs"
-    },
-    {
-      "source": "org1",
-      "target": "cat_entrepreneurs",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "org1",
-      "target": "cat_education",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "org1",
-      "target": "cat_corporates",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "org1",
-      "target": "cat_government",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "org1",
-      "target": "cat_nonprofits",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "org1",
-      "target": "cat_investors",
-      "type": "category_link",
-      "description": "TIQC connects with this stakeholder category"
-    },
-    {
-      "source": "cat_education",
-      "target": "org2",
-      "type": "category_membership",
-      "description": "CUNY I-Corp belongs to Education & Talent"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org3",
-      "type": "category_membership",
-      "description": "QEDC belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org4",
-      "type": "category_membership",
-      "description": "SCORE belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org5",
-      "type": "category_membership",
-      "description": "QCC belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_investors",
-      "target": "org6",
-      "type": "category_membership",
-      "description": "Accompany Capital belongs to Investors & Funders"
-    },
-    {
-      "source": "cat_government",
-      "target": "org7",
-      "type": "category_membership",
-      "description": "NYCEDC belongs to Government & Public Agencies"
-    },
-    {
-      "source": "cat_education",
-      "target": "org8",
-      "type": "category_membership",
-      "description": "CUNY Startups belongs to Education & Talent"
-    },
-    {
-      "source": "cat_corporates",
-      "target": "org9",
-      "type": "category_membership",
-      "description": "Ycenter belongs to Corporates & Industry"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org10",
-      "type": "category_membership",
-      "description": "QPL belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org11",
-      "type": "category_membership",
-      "description": "SBDC belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_government",
-      "target": "org12",
-      "type": "category_membership",
-      "description": "SBA belongs to Government & Public Agencies"
-    },
-    {
-      "source": "cat_government",
-      "target": "org13",
-      "type": "category_membership",
-      "description": "QBP Office belongs to Government & Public Agencies"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org14",
-      "type": "category_membership",
-      "description": "1MCNYC belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_corporates",
-      "target": "org15",
-      "type": "category_membership",
-      "description": "Grow with Google belongs to Corporates & Industry"
-    },
-    {
-      "source": "cat_corporates",
-      "target": "org16",
-      "type": "category_membership",
-      "description": "Verizon belongs to Corporates & Industry"
-    },
-    {
-      "source": "cat_corporates",
-      "target": "org17",
-      "type": "category_membership",
-      "description": "AWS Academy belongs to Corporates & Industry"
-    },
-    {
-      "source": "cat_education",
-      "target": "org18",
-      "type": "category_membership",
-      "description": "Open Avenue belongs to Education & Talent"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org19",
-      "type": "category_membership",
-      "description": "Girls Who Code belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_entrepreneurs",
-      "target": "org20",
-      "type": "category_membership",
-      "description": "Edge Studio belongs to Entrepreneurs & Small Businesses"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org21",
-      "type": "category_membership",
-      "description": "NY Tech Alliance belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org22",
-      "type": "category_membership",
-      "description": "Toast of Queens belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org23",
-      "type": "category_membership",
-      "description": "NYPACE belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_entrepreneurs",
-      "target": "org24",
-      "type": "category_membership",
-      "description": "DM Firm belongs to Entrepreneurs & Small Businesses"
-    },
-    {
-      "source": "cat_government",
-      "target": "org25",
-      "type": "category_membership",
-      "description": "SBS belongs to Government & Public Agencies"
-    },
-    {
-      "source": "cat_nonprofits",
-      "target": "org26",
-      "type": "category_membership",
-      "description": "Inbia belongs to Non-profits & Community Orgs"
-    },
-    {
-      "source": "cat_investors",
-      "target": "org99",
-      "type": "category_membership",
-      "description": "FirstGen belongs to Investors & Funders"
     }
   ]
 }
