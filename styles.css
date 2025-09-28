@@ -55,6 +55,54 @@ body {
     gap: 8px;
 }
 
+.search-group {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-group input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.btn-clear {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.search-results {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(102, 126, 234, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
 .control-group label {
     font-weight: 600;
     color: #555;
@@ -147,11 +195,15 @@ body {
     opacity: 0;
     transition: all 0.3s ease;
     z-index: 10000;
-    max-width: 300px;
+    max-width: 400px;
+    min-width: 200px;
+    width: auto;
     box-shadow: 0 8px 32px rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
     display: none;
     border: 2px solid rgba(102, 126, 234, 0.3);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Tooltip arrow indicator */
@@ -187,6 +239,38 @@ body {
 .tooltip p {
     margin-bottom: 4px;
     line-height: 1.4;
+}
+
+.tooltip .tags-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tooltip .tags-line strong {
+    margin-right: 8px;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+}
+
+.tooltip .tags-line span {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tooltip .tag-badge {
+    background: #667eea20;
+    color: #667eea;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin-right: 4px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 /* SVG Legend styles */

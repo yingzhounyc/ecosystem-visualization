@@ -15,6 +15,11 @@
         </header>
         
         <div class="controls">
+            <div class="control-group search-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search organizations, contacts, tags...">
+                <button id="clearSearch" class="btn-clear" style="display: none;">×</button>
+            </div>
             <div class="control-group">
                 <label for="nodeSize">Node Size:</label>
                 <input type="range" id="nodeSize" min="5" max="20" value="10">
@@ -30,6 +35,7 @@
         </div>
         
         <div class="visualization-container">
+            <div id="search-results" class="search-results" style="display: none;"></div>
             <svg id="network-svg"></svg>
             <div id="tooltip" class="tooltip"></div>
         </div>

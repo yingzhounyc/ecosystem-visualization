@@ -2,12 +2,17 @@
   "organizations": [
     {
       "id": "org1",
-      "name": "Tech Incubator at Queens College",
+      "name": "TIQC",
       "contactPerson": "Ying Zhou",
       "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(917) 319-4027",
+      "website": "https://techincubatorqc.com",
       "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
       "type": "higher_ed",
-      "description": "Access to funding and resources for entrepreneurs"
+      "description": "Tech Incubator at Queens College provides access to innovation and technology support, training, and resources for entrepreneurs",
+      "tags": [
+        "incubator", "education", "entrepreneurship", "internship", "mentoring", "technology", "innovation", "prototyping", "co-working"
+      ]
     },
     {
       "id": "org2",
@@ -16,16 +21,33 @@
       "email": "John.Blaho@cuny.edu",
       "address": "555 W. 57th Street, New York, NY 10019 ",
       "type": "higher_ed",
-      "description": "Helps develop scientific and engineering discoveries into useful technologies"
+      "description": "Helps develop scientific and engineering discoveries into useful technologies",
+      "phone": "(212) 541-0000",
+      "website": "https://www.cuny.edu/icorp",
+      "tags": [
+        "research",
+        "technology",
+        "innovation",
+        "commercialization",
+        "training"
+      ]
     },
     {
       "id": "org3",
-      "name": "Queens Economic Development Corporation",
+      "name": "QEDC",
       "contactPerson": "Ben Guttman",
       "email": "ben@queensny.org",
-      "address": "11419, 120-55 Queens Blvd #309, Kew Gardens, NY 11424",
+      "address": "120-55 Queens Blvd #309, Kew Gardens, NY 11424",
       "type": "non_profit",
-      "description": "Business support and community development"
+      "description": "Queens Economic Development Corporation is a non-profit organization that provides business support and community development",
+      "phone": "(718) 263-0546",
+      "website": "https://www.queensny.org",
+      "tags": [
+        "economic development",
+        "business support",
+        "community",
+        "training"
+      ]
     },
     {
       "id": "org4",
@@ -34,16 +56,32 @@
       "email": "lawrence.sussberg@scorevolunteer.org",
       "address": "26 Federal Plaza Rm 3100, New York, NY 10006",
       "type": "non_profit",
-      "description": "A volunteer team of experienced business mentors and advisors providing free insights and knowledge to small business owners and entrepreneurs wishing to start a business"
+      "description": "SCORE is a volunteer team of experienced business mentors and advisors providing free insights and knowledge to small business owners and entrepreneurs wishing to start a business",
+      "phone": "(212) 264-4507",
+      "website": "https://www.score.org",
+      "tags": [
+        "mentoring",
+        "business advice",
+        "volunteer",
+        "small business",
+        "training"
+      ]
     },
     {
       "id": "org5",
-      "name": "Queens Chamber of Commerce",
+      "name": "QCC",
       "contactPerson": "Thomas Grechen",
       "email": "tgrechen@queenschamber.org",
       "address": "75-20 Astoria Blvd S Suite 140, East Elmhurst, NY 11370",
       "type": "non_profit",
-      "description": "a non-profit organization that promotes the interests of businesses in Queens County"
+      "description": "Queens Chamber of Commerce is a non-profit organization that promotes the interests of businesses in Queens County",
+      "phone": "(718) 898-8500",
+      "website": "https://www.queenschamber.org",
+      "tags": [
+        "chamber of commerce",
+        "business network",
+        "advocacy"
+      ]
     },
     {
       "id": "org6",
@@ -52,7 +90,16 @@
       "email": "ytshering@accompanycapital.org",
       "address": "78-27 37th Ave Suite #1, Jackson Heights, NY 11372",
       "type": "non_profit",
-      "description": "supporting underserved entrepreneurs as they launch and grow their businesses with access to affordable credit, financial education, and training in technology and best business practices."
+      "description": "Supports underserved entrepreneurs as they launch and grow their businesses with access to affordable credit, financial education, and training in technology and best business practices.",
+      "phone": "(718) 565-8500",
+      "website": "https://www.accompanycapital.org",
+      "tags": [
+        "microfinance",
+        "financial services",
+        "training",
+        "funding",
+        "entrepreneurship"
+      ]
     },
     {
       "id": "org7",
@@ -61,7 +108,14 @@
       "email": "daria.seigl@nycedc.com",
       "address": "One Liberty St, New York, NY 10006",
       "type": "non_profit",
-      "description": "Serves as the official economic development organization for New York City"
+      "description": "NYCEDC serves as the official economic development organization for New York City",
+      "phone": "(212) 312-3600",
+      "website": "https://www.nycedc.com",
+      "tags": [
+        "economic development",
+        "business support",
+        "funding"
+      ]
     },
     {
       "id": "org8",
@@ -70,7 +124,15 @@
       "email": "remy@cunystartups.com",
       "address": "55 Lexington Ave 2nd floor room 2, New York, NY 10010",
       "type": "higher_ed",
-      "description": "CUNY's startup accelerator program"
+      "description": "CUNY's startup accelerator program",
+      "phone": "(212) 541-0000",
+      "website": "https://www.cunystartups.com",
+      "tags": [
+        "startup accelerator",
+        "entrepreneurship",
+        "innovation",
+        "training"
+      ]
     },
     {
       "id": "org9",
@@ -79,43 +141,218 @@
       "email": "dhairya@ycenter.org",
       "address": "1701 Walnut St, Philadelphia, PA 19103",
       "type": "corporation",
-      "description": "A global innovation agency, solving complex problems"
+      "description": "Ycenter is a global innovation agency, solving complex problems",
+      "phone": "(215) 545-0000",
+      "website": "https://www.ycenter.org",
+      "tags": [
+        "global innovation",
+        "social impact",
+        "consulting",
+        "training"
+      ]
     },
     {
       "id": "org10",
-      "name": "Queens Public Library",
+      "name": "QPL",
       "contactPerson": "Ebru Yenal",
       "email": "Ebru.Yenal@queenslibrary.org",
       "address": "41-17 Main St, Flushing, NY 11355",
       "type": "non_profit",
-      "description": "a public library system that serves the residents of Queens County"
+      "description": "Queens Public Library is a library system that serves the residents of Queens County",
+      "phone": "(718) 990-0700",
+      "website": "https://www.queenslibrary.org",
+      "tags": [
+        "education",
+        "training",
+        "community services",
+        "entrepreneurship"
+      ]
     },
     {
-        "id": "org11",
-        "name": "Queens-Laguardia SBDC Center",
-        "contactPerson": "Glamis Haro",
-        "email": "sbdc@lagcc.cuny.edu",
-        "address": "30-20 Thomson Avenue, Long Island City, NY 11101",
-        "type": "non_profit",
-        "description": "Small Business Development Center"
-      },
-    {
-        "id": "org12",
-        "name": "SBA",
-        "contactPerson": "Man-Li Lin",
-        "email": "Man-Li.Lin@sba.gov",
-        "address": "26 Federal Plaza Rm 3100, New York, NY 10278",
-        "type": "government_agency",
-        "description": "a public library system that serves the residents of Queens County"
+      "id": "org11",
+      "name": "SBDC",
+      "contactPerson": "Glamis Haro",
+      "email": "sbdc@lagcc.cuny.edu",
+      "address": "30-20 Thomson Avenue, Long Island City, NY 11101",
+      "type": "non_profit",
+      "description": "Small Business Development Center is a program that provides training and resources for entrepreneurs to start and grow their businesses",
+      "phone": "(718) 482-5303",
+      "website": "https://www.lagcc.cuny.edu/sbdc",
+      "tags": [
+        "small business",
+        "development center",
+        "consulting"
+      ]
     },
     {
-        "id": "org13",
-        "name": "Queens Borough President's Office",
-        "contactPerson": "Ebony Young",
-        "email": "Ebony.Young@queensbp.org",
-        "address": "120-55 Queens Blvd, Kew Gardens, NY 11424",
-        "type": "government_agency",
-        "description": "Executive officials of borough of Queens"
+      "id": "org12",
+      "name": "SBA",
+      "contactPerson": "Man-Li Lin",
+      "email": "Man-Li.Lin@sba.gov",
+      "address": "26 Federal Plaza Rm 3100, New York, NY 10278",
+      "type": "government_agency",
+      "description": "Queens Public Library is a library system that serves the residents of Queens County",
+      "phone": "(212) 264-4354",
+      "website": "https://www.sba.gov",
+      "tags": [
+        "federal agency",
+        "small business",
+        "loans",
+        "government"
+      ]
+    },
+    {
+      "id": "org13",
+      "name": "QBP Office",
+      "contactPerson": "Ebony Young",
+      "email": "Ebony.Young@queensbp.org",
+      "address": "120-55 Queens Blvd, Kew Gardens, NY 11424",
+      "type": "government_agency",
+      "description": "Queens Borough President's Office is the executive officials of borough of Queens",
+      "phone": "(718) 286-3000",
+      "website": "https://www.queensbp.org",
+      "tags": [
+        "policy"
+      ]
+    },
+    {
+      "id": "org14",
+      "name": "1MCNYC",
+      "contactPerson": "Tasemere & Alinda",
+      "email": "info@thedmfirmnyc.com",
+      "address": "CEP Hall #265-30 Kissena Blvd, Flushing, NY 11367",
+      "type": "non_profit",
+      "description": "1 Million Cups educates, inspires and connects entrepreneurs nationwide",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "entrepreneurship",
+        "training",
+        "innovation",
+        "technology",
+        "education",
+        "mentoring"
+      ]
+    },
+    {
+      "id": "org15",
+      "name": "Grow with Google",
+      "contactPerson": "TBD",
+      "email": "support@growwithgoogle.com",
+      "address": "550 Washington St, New York, NY 10014",
+      "type": "corporation",
+      "description": "Partner program that offers resources for your organization to teach people the digital skills that will grow their careers and businesses",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "business",
+        "digital literacy",
+        "digital skills",
+        "technology",
+        "training"
+      ]
+    },
+    {
+      "id": "org16",
+      "name": "Verizon",
+      "contactPerson": "Meredith Phillips Almeida",
+      "email": "Meredith@digitalreadypartners.com",
+      "address": "virtual office",
+      "type": "corporation",
+      "description": "Verizon is a telecommunications company that provides internet, television, and phone services to businesses and consumers",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "business",
+        "digital literacy",
+        "digital skills",
+        "technology",
+        "training"
+      ]
+    },
+    {
+      "id": "org17",
+      "name": "AWS Academy",
+      "contactPerson": "Connie Ozmer",
+      "email": "cozmer@amazon.com",
+      "address": "350 West Broadway, New York, NY 10013",
+      "type": "corporation",
+      "description": "AWS Academy is a program that provides training and resources for entrepreneurs to learn about AWS services and technologies",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "technology",
+        "training",
+        "career",
+        "certification",
+        "AWS"
+      ]
+    },
+    {
+      "id": "org18",
+      "name": "Open Avenue",
+      "contactPerson": "Danila Blanco",
+      "email": "danila@buildfellowship.com",
+      "address": "Virtual office",
+      "type": "corporation",
+      "description": "Offer immigration solutions to global innovators, entrepreneurs, and experts while preparing U.S. college and university students for careers in STEM",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "internship",
+        "mentoring",
+        "technology",
+        "career"
+      ]
+    },
+    {
+      "id": "org19",
+      "name": "Girls Who Code",
+      "contactPerson": "TBD",
+      "email": "info@girlswhocode.com",
+      "address": "Virtual office",
+      "type": "non_profit",
+      "description": "Girls Who Code is a nonprofit organization that works to close the gender gap in technology and to prepare girls for the 21st century by teaching them to code",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "coding",
+        "technology",
+        "mentoring",
+        "career"
+      ]
+    },
+    {
+      "id": "org20",
+      "name": "Edge Studio",
+      "contactPerson": "David Goldberg",
+      "email": "david@edgestudio.com",
+      "address": "115 W 45th St Floor 8, New York, NY 10036",
+      "type": "corporation",
+      "description": "Edge Studio provides voice training, dubbing, and translation services to the film, television, and media industries",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "communication",
+        "training",
+        "media"
+      ]
+    },
+    {
+      "id": "org21",
+      "name": "NY Tech Alliance",
+      "contactPerson": "Doug Binnete",
+      "email": "doug@nytech.org",
+      "address": "124 E 14th St, New York, NY 10003",
+      "type": "non_profit",
+      "description": "NY Tech Alliance is a non-profit organization that supports the technology industry in New York City",
+      "phone": "(555) 000-0000",
+      "website": "https://example.com",
+      "tags": [
+        "technology",
+        "innovation",
+        "startup"
+      ]
     }
   ],
   "relationships": [
@@ -132,18 +369,17 @@
       "description": "Joint support for business development"
     },
     {
-        "source": "org1",
-        "target": "org4",
-        "type": "collaboration_partnership",
-        "description": "Joint support for business development"
-      },
+      "source": "org1",
+      "target": "org4",
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
+    },
     {
       "source": "org1",
       "target": "org5",
       "type": "collaboration_partnership",
       "description": "Joint support for business development"
     },
-    
     {
       "source": "org6",
       "target": "org1",
@@ -175,46 +411,100 @@
       "description": "joint support for entrepreneurs"
     },
     {
-        "source": "org1",
-        "target": "org11",
-        "type": "collaboration_partnership",
-        "description": "joint support for entrepreneurs"
-      },
-    {
-        "source": "org1",
-        "target": "org12",
-        "type": "collaboration_partnership",
-        "description": "joint support for entrepreneurs"
+      "source": "org1",
+      "target": "org11",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
     },
     {
-            "source": "org12",
-            "target": "org11",
-            "type": "funding_relationship",
-            "description": "joint support for entrepreneurs"
+      "source": "org1",
+      "target": "org12",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
     },
     {
-        "source": "org12",
-        "target": "org4",
-        "type": "funding_relationship",
-        "description": "joint support for entrepreneurs"
+      "source": "org12",
+      "target": "org11",
+      "type": "funding_relationship",
+      "description": "joint support for entrepreneurs"
     },
     {
-        "source": "org3",
-        "target": "org5",
-        "type": "collaboration_partnership",
-        "description": "joint support for entrepreneurs"
+      "source": "org12",
+      "target": "org4",
+      "type": "funding_relationship",
+      "description": "joint support for entrepreneurs"
     },
     {
-        "source": "org6",
-        "target": "org13",
-        "type": "funding_relationship",
-        "description": "joint support for entrepreneurs"
+      "source": "org3",
+      "target": "org5",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
     },
     {
-        "source": "org3",
-        "target": "org13",
-        "type": "funding_relationship",
-        "description": "joint support for entrepreneurs"
+      "source": "org13",
+      "target": "org6",
+      "type": "funding_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org14",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org15",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org16",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org17",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org18",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org19",
+      "target": "org1",
+      "type": "sponsor_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org20",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org14",
+      "target": "org20",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org21",
+      "target": "org1",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org13",
+      "target": "org3",
+      "type": "funding_relationship",
+      "description": "joint support for entrepreneurs"
     }
   ]
 }

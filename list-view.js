@@ -107,7 +107,8 @@ function filterAndRender() {
             org.contactPerson.toLowerCase().includes(searchTerm) ||
             org.email.toLowerCase().includes(searchTerm) ||
             org.description.toLowerCase().includes(searchTerm) ||
-            org.address.toLowerCase().includes(searchTerm);
+            org.address.toLowerCase().includes(searchTerm) ||
+            (org.tags && org.tags.some(tag => tag.toLowerCase().includes(searchTerm)));
         
         const matchesType = !typeFilter || org.type === typeFilter;
         
@@ -190,7 +191,15 @@ function createOrganizationCard(org) {
                 </div>
                 <div class="organization-detail">
                     <div class="organization-detail-icon">📧</div>
-                    <span>${org.email}</span>
+                    <span><a href="mailto:${org.email}" style="color: #667eea;">${org.email}</a></span>
+                </div>
+                <div class="organization-detail">
+                    <div class="organization-detail-icon">📞</div>
+                    <span><a href="tel:${org.phone}" style="color: #667eea;">${org.phone}</a></span>
+                </div>
+                <div class="organization-detail">
+                    <div class="organization-detail-icon">🌐</div>
+                    <span><a href="${org.website}" target="_blank" style="color: #667eea;">${org.website}</a></span>
                 </div>
                 <div class="organization-detail">
                     <div class="organization-detail-icon">📍</div>
@@ -200,6 +209,12 @@ function createOrganizationCard(org) {
                     <div class="organization-detail-icon">🔗</div>
                     <span>${orgRelationships.length} connections</span>
                 </div>
+                ${org.tags ? `
+                <div class="organization-detail tags-detail">
+                    <div class="organization-detail-icon">🏷️</div>
+                    <div class="tags-container">${org.tags.map(tag => `<span style="background: #667eea20; color: #667eea; padding: 2px 6px; border-radius: 10px; font-size: 0.8em; margin-right: 4px; display: inline-block; margin-bottom: 2px;">${tag}</span>`).join('')}</div>
+                </div>
+                ` : ''}
             </div>
             
             <div class="organization-description">
@@ -266,8 +281,22 @@ function showOrganizationDetails(orgId) {
                 <div class="modal-value">
                     <a href="mailto:${org.email}" style="color: #667eea;">${org.email}</a>
                 </div>
+                <div class="modal-label">Phone:</div>
+                <div class="modal-value">
+                    <a href="tel:${org.phone}" style="color: #667eea;">${org.phone}</a>
+                </div>
+                <div class="modal-label">Website:</div>
+                <div class="modal-value">
+                    <a href="${org.website}" target="_blank" style="color: #667eea;">${org.website}</a>
+                </div>
                 <div class="modal-label">Address:</div>
                 <div class="modal-value">${org.address}</div>
+                ${org.tags ? `
+                <div class="modal-label">Tags:</div>
+                <div class="modal-value tags-modal">
+                    ${org.tags.map(tag => `<span style="background: #667eea20; color: #667eea; padding: 4px 8px; border-radius: 12px; font-size: 0.9em; margin-right: 6px; display: inline-block; margin-bottom: 4px;">${tag}</span>`).join('')}
+                </div>
+                ` : ''}
             </div>
         </div>
         

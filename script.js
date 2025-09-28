@@ -5,6 +5,7 @@ let nodes, links, nodeLabels;
 let showLabels = true;
 let nodeSize = 10;
 let linkDistance = 100;
+let searchTerm = '';
 
 // Color scheme for different organization types
 const colorScheme = {
@@ -154,6 +155,22 @@ function createNetwork() {
 }
 
 function setupEventListeners() {
+    // Search functionality
+    d3.select('#searchInput').on('input', function() {
+        searchTerm = this.value.toLowerCase();
+        const clearButton = d3.select('#clearSearch');
+        clearButton.style('display', searchTerm ? 'flex' : 'none');
+        filterNodes();
+    });
+    
+    // Clear search button
+    d3.select('#clearSearch').on('click', function() {
+        d3.select('#searchInput').property('value', '');
+        searchTerm = '';
+        d3.select('#clearSearch').style('display', 'none');
+        filterNodes();
+    });
+    
     // Node size control
     d3.select('#nodeSize').on('input', function() {
         nodeSize = +this.value;
@@ -204,9 +221,12 @@ function showTooltip(event, d, type) {
         tooltip.html(`
             <h4>${d.name}</h4>
             <p><strong>Contact:</strong> ${d.contactPerson}</p>
-            <p><strong>Email:</strong> ${d.email}</p>
+            <p><strong>Email:</strong> <a href="mailto:${d.email}" style="color: #667eea;">${d.email}</a></p>
+            <p><strong>Phone:</strong> <a href="tel:${d.phone}" style="color: #667eea;">${d.phone}</a></p>
+            <p><strong>Website:</strong> <a href="${d.website}" target="_blank" style="color: #667eea;">${d.website}</a></p>
             <p><strong>Address:</strong> ${d.address}</p>
             <p><strong>Type:</strong> ${d.type.replace('_', ' ').toUpperCase()}</p>
+            <p class="tags-line"><strong>Tags:</strong> ${d.tags ? d.tags.map(tag => `<span class="tag-badge">${tag}</span>`).join('') : 'None'}</p>
             <p><strong>Description:</strong> ${d.description}</p>
         `);
     } else if (type === 'relationship') {
@@ -438,6 +458,50 @@ function createLegend() {
         .attr('font-size', '12px')
         .attr('fill', '#666')
         .text(d => d.label);
+}
+
+function filterNodes() {
+    if (!data || !nodes) return;
+    
+    // Filter organizations based on search term
+    const filteredOrgs = data.organizations.filter(org => {
+        if (!searchTerm) return true;
+        
+        return org.name.toLowerCase().includes(searchTerm) ||
+               org.contactPerson.toLowerCase().includes(searchTerm) ||
+               org.email.toLowerCase().includes(searchTerm) ||
+               org.description.toLowerCase().includes(searchTerm) ||
+               org.address.toLowerCase().includes(searchTerm) ||
+               (org.tags && org.tags.some(tag => tag.toLowerCase().includes(searchTerm)));
+    });
+    
+    // Update search results counter
+    const searchResults = d3.select('#search-results');
+    if (searchTerm) {
+        searchResults
+            .style('display', 'block')
+            .text(`Found ${filteredOrgs.length} of ${data.organizations.length} organizations`);
+    } else {
+        searchResults.style('display', 'none');
+    }
+    
+    // Update node visibility
+    nodes.style('opacity', d => {
+        return filteredOrgs.some(org => org.id === d.id) ? 1 : 0.3;
+    });
+    
+    // Update label visibility
+    nodeLabels.style('opacity', d => {
+        const isVisible = filteredOrgs.some(org => org.id === d.id);
+        return isVisible && showLabels ? 1 : 0;
+    });
+    
+    // Update link visibility
+    links.style('opacity', d => {
+        const sourceVisible = filteredOrgs.some(org => org.id === d.source.id);
+        const targetVisible = filteredOrgs.some(org => org.id === d.target.id);
+        return sourceVisible && targetVisible ? 1 : 0.1;
+    });
 }
 
 // Function to reload data and refresh visualization
