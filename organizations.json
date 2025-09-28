@@ -2,167 +2,219 @@
   "organizations": [
     {
       "id": "org1",
-      "name": "Tech Innovation Hub",
-      "contactPerson": "Sarah Johnson",
-      "email": "sarah.johnson@techhub.org",
-      "address": "123 Innovation Drive, Silicon Valley, CA 94000",
-      "type": "corporation",
-      "description": "Leading technology innovation center"
+      "name": "Tech Incubator at Queens College",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "type": "higher_ed",
+      "description": "Access to funding and resources for entrepreneurs"
     },
     {
       "id": "org2",
-      "name": "Stanford University",
-      "contactPerson": "Dr. Michael Chen",
-      "email": "mchen@stanford.edu",
-      "address": "450 Serra Mall, Stanford, CA 94305",
+      "name": "CUNY I-Corp",
+      "contactPerson": "Dr. John Blaho",
+      "email": "John.Blaho@cuny.edu",
+      "address": "555 W. 57th Street, New York, NY 10019 ",
       "type": "higher_ed",
-      "description": "Prestigious research university"
+      "description": "Helps develop scientific and engineering discoveries into useful technologies"
     },
     {
       "id": "org3",
-      "name": "Green Future Foundation",
-      "contactPerson": "Emily Rodriguez",
-      "email": "emily@greenfuture.org",
-      "address": "456 Environmental Ave, San Francisco, CA 94102",
+      "name": "Queens Economic Development Corporation",
+      "contactPerson": "Ben Guttman",
+      "email": "ben@queensny.org",
+      "address": "11419, 120-55 Queens Blvd #309, Kew Gardens, NY 11424",
       "type": "non_profit",
-      "description": "Environmental sustainability advocacy"
+      "description": "Business support and community development"
     },
     {
       "id": "org4",
-      "name": "Department of Energy",
-      "contactPerson": "James Wilson",
-      "email": "james.wilson@energy.gov",
-      "address": "1000 Independence Ave SW, Washington, DC 20585",
-      "type": "government_agency",
-      "description": "Federal energy policy and research"
+      "name": "SCORE",
+      "contactPerson": "Lawrence Sussberg",
+      "email": "lawrence.sussberg@scorevolunteer.org",
+      "address": "26 Federal Plaza Rm 3100, New York, NY 10006",
+      "type": "non_profit",
+      "description": "A volunteer team of experienced business mentors and advisors providing free insights and knowledge to small business owners and entrepreneurs wishing to start a business"
     },
     {
       "id": "org5",
-      "name": "MIT",
-      "contactPerson": "Dr. Lisa Park",
-      "email": "lpark@mit.edu",
-      "address": "77 Massachusetts Ave, Cambridge, MA 02139",
-      "type": "higher_ed",
-      "description": "Massachusetts Institute of Technology"
+      "name": "Queens Chamber of Commerce",
+      "contactPerson": "Thomas Grechen",
+      "email": "tgrechen@queenschamber.org",
+      "address": "75-20 Astoria Blvd S Suite 140, East Elmhurst, NY 11370",
+      "type": "non_profit",
+      "description": "a non-profit organization that promotes the interests of businesses in Queens County"
     },
     {
       "id": "org6",
-      "name": "CleanTech Ventures",
-      "contactPerson": "David Kim",
-      "email": "david@cleantechventures.com",
-      "address": "789 Venture Capital Blvd, Boston, MA 02110",
-      "type": "corporation",
-      "description": "Venture capital for clean technology"
+      "name": "Accompany Capital",
+      "contactPerson": "Yanki Tshering",
+      "email": "ytshering@accompanycapital.org",
+      "address": "78-27 37th Ave Suite #1, Jackson Heights, NY 11372",
+      "type": "non_profit",
+      "description": "supporting underserved entrepreneurs as they launch and grow their businesses with access to affordable credit, financial education, and training in technology and best business practices."
     },
     {
       "id": "org7",
-      "name": "World Health Organization",
-      "contactPerson": "Dr. Maria Santos",
-      "email": "santosm@who.int",
-      "address": "Avenue Appia 20, 1211 Geneva, Switzerland",
-      "type": "international_org",
-      "description": "Global health organization"
+      "name": "NYCEDC",
+      "contactPerson": "Daria Seigle",
+      "email": "daria.seigl@nycedc.com",
+      "address": "One Liberty St, New York, NY 10006",
+      "type": "non_profit",
+      "description": "Serves as the official economic development organization for New York City"
     },
     {
       "id": "org8",
-      "name": "Berkeley Lab",
-      "contactPerson": "Dr. Robert Taylor",
-      "email": "rtaylor@lbl.gov",
-      "address": "1 Cyclotron Rd, Berkeley, CA 94720",
-      "type": "government_agency",
-      "description": "Lawrence Berkeley National Laboratory"
+      "name": "CUNY Startups",
+      "contactPerson": "Remy Arteaga",
+      "email": "remy@cunystartups.com",
+      "address": "55 Lexington Ave 2nd floor room 2, New York, NY 10010",
+      "type": "higher_ed",
+      "description": "CUNY's startup accelerator program"
     },
     {
       "id": "org9",
-      "name": "Gates Foundation",
-      "contactPerson": "Jennifer Adams",
-      "email": "jennifer@gatesfoundation.org",
-      "address": "440 5th Ave S, Seattle, WA 98109",
-      "type": "non_profit",
-      "description": "Global health and development foundation"
+      "name": "Ycenter",
+      "contactPerson": "Dhairya Pujara",
+      "email": "dhairya@ycenter.org",
+      "address": "1701 Walnut St, Philadelphia, PA 19103",
+      "type": "corporation",
+      "description": "A global innovation agency, solving complex problems"
     },
     {
       "id": "org10",
-      "name": "Tesla Inc.",
-      "contactPerson": "Alex Morgan",
-      "email": "alex.morgan@tesla.com",
-      "address": "1 Tesla Rd, Austin, TX 78725",
-      "type": "corporation",
-      "description": "Electric vehicle and clean energy company"
+      "name": "Queens Public Library",
+      "contactPerson": "Ebru Yenal",
+      "email": "Ebru.Yenal@queenslibrary.org",
+      "address": "41-17 Main St, Flushing, NY 11355",
+      "type": "non_profit",
+      "description": "a public library system that serves the residents of Queens County"
+    },
+    {
+        "id": "org11",
+        "name": "Queens-Laguardia SBDC Center",
+        "contactPerson": "Glamis Haro",
+        "email": "sbdc@lagcc.cuny.edu",
+        "address": "30-20 Thomson Avenue, Long Island City, NY 11101",
+        "type": "non_profit",
+        "description": "Small Business Development Center"
+      },
+    {
+        "id": "org12",
+        "name": "SBA",
+        "contactPerson": "Man-Li Lin",
+        "email": "Man-Li.Lin@sba.gov",
+        "address": "26 Federal Plaza Rm 3100, New York, NY 10278",
+        "type": "government_agency",
+        "description": "a public library system that serves the residents of Queens County"
+    },
+    {
+        "id": "org13",
+        "name": "Queens Borough President's Office",
+        "contactPerson": "Ebony Young",
+        "email": "Ebony.Young@queensbp.org",
+        "address": "120-55 Queens Blvd, Kew Gardens, NY 11424",
+        "type": "government_agency",
+        "description": "Executive officials of borough of Queens"
     }
   ],
   "relationships": [
     {
       "source": "org1",
       "target": "org2",
-      "type": "research_partnership",
-      "description": "Joint research initiatives in AI and robotics"
+      "type": "innovation_partnership",
+      "description": "Joint support for commercializing technologies"
     },
     {
       "source": "org1",
       "target": "org3",
-      "type": "sustainability_collaboration",
-      "description": "Green technology development partnership"
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
     },
     {
-      "source": "org2",
+        "source": "org1",
+        "target": "org4",
+        "type": "collaboration_partnership",
+        "description": "Joint support for business development"
+      },
+    {
+      "source": "org1",
       "target": "org5",
-      "type": "academic_collaboration",
-      "description": "Student exchange and research programs"
+      "type": "collaboration_partnership",
+      "description": "Joint support for business development"
     },
-    {
-      "source": "org3",
-      "target": "org4",
-      "type": "policy_advocacy",
-      "description": "Environmental policy recommendations"
-    },
-    {
-      "source": "org4",
-      "target": "org8",
-      "type": "funding_relationship",
-      "description": "Federal research funding and oversight"
-    },
-    {
-      "source": "org5",
-      "target": "org6",
-      "type": "technology_transfer",
-      "description": "MIT research commercialization"
-    },
+    
     {
       "source": "org6",
-      "target": "org10",
-      "type": "investment_relationship",
-      "description": "Venture capital investment in clean tech"
+      "target": "org1",
+      "type": "funding_relationship",
+      "description": "Joint support for business development"
     },
     {
       "source": "org7",
-      "target": "org9",
-      "type": "global_health_partnership",
-      "description": "International health initiatives"
-    },
-    {
-      "source": "org8",
-      "target": "org10",
-      "type": "research_collaboration",
-      "description": "Battery technology research partnership"
-    },
-    {
-      "source": "org9",
-      "target": "org2",
+      "target": "org1",
       "type": "funding_relationship",
-      "description": "Global health research funding"
+      "description": "Joint support for business development"
     },
     {
-      "source": "org2",
+      "source": "org1",
       "target": "org8",
-      "type": "research_collaboration",
-      "description": "Joint energy research projects"
+      "type": "collaboration_partnership",
+      "description": "Joint support for entrepreneurs"
     },
     {
-      "source": "org3",
-      "target": "org6",
-      "type": "sustainability_partnership",
-      "description": "Clean technology advocacy and funding"
+      "source": "org1",
+      "target": "org9",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org1",
+      "target": "org10",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+        "source": "org1",
+        "target": "org11",
+        "type": "collaboration_partnership",
+        "description": "joint support for entrepreneurs"
+      },
+    {
+        "source": "org1",
+        "target": "org12",
+        "type": "collaboration_partnership",
+        "description": "joint support for entrepreneurs"
+    },
+    {
+            "source": "org12",
+            "target": "org11",
+            "type": "funding_relationship",
+            "description": "joint support for entrepreneurs"
+    },
+    {
+        "source": "org12",
+        "target": "org4",
+        "type": "funding_relationship",
+        "description": "joint support for entrepreneurs"
+    },
+    {
+        "source": "org3",
+        "target": "org5",
+        "type": "collaboration_partnership",
+        "description": "joint support for entrepreneurs"
+    },
+    {
+        "source": "org6",
+        "target": "org13",
+        "type": "funding_relationship",
+        "description": "joint support for entrepreneurs"
+    },
+    {
+        "source": "org3",
+        "target": "org13",
+        "type": "funding_relationship",
+        "description": "joint support for entrepreneurs"
     }
   ]
 }

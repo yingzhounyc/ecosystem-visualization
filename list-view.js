@@ -11,8 +11,7 @@ const colorScheme = {
     corporation: '#e74c3c',
     higher_ed: '#3498db',
     non_profit: '#2ecc71',
-    government_agency: '#f39c12',
-    international_org: '#9b59b6'
+    government_agency: '#f39c12'
 };
 
 // Initialize the list view
@@ -229,7 +228,7 @@ function getInitials(name) {
 
 function getOrganizationRelationships(orgId) {
     return relationships.filter(rel => 
-        rel.source.id === orgId || rel.target.id === orgId
+        rel.source === orgId || rel.target === orgId
     );
 }
 
@@ -242,12 +241,12 @@ function showOrganizationDetails(orgId) {
     
     // Get related organizations
     const relatedOrgs = orgRelationships.map(rel => {
-        const relatedId = rel.source.id === orgId ? rel.target.id : rel.source.id;
+        const relatedId = rel.source === orgId ? rel.target : rel.source;
         const relatedOrg = organizations.find(o => o.id === relatedId);
         return {
             org: relatedOrg,
             relationship: rel,
-            isSource: rel.source.id === orgId
+            isSource: rel.source === orgId
         };
     }).filter(item => item.org);
     
