@@ -9,11 +9,13 @@ let searchTerm = '';
 
 // Color scheme for different organization types
 const colorScheme = {
-    corporation: '#e74c3c',
-    higher_ed: '#3498db',
+    corporation: '#3498db',
+    education: '#ff5b00',
     non_profit: '#2ecc71',
-    government_agency: '#f39c12',
-    category: '#8e44ad', // Purple for categories
+    government_agency: '#808080',
+    small_business: '#40E0D0', // Turquoise for small businesses
+    investor_funder: '#9b59b6', // Purple for investors/funders
+    category: '#E4a0f7', // Red for categories
 };
 
 // Initialize the application

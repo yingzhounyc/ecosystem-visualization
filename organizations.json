@@ -5,10 +5,10 @@
       "name": "TIQC",
       "contactPerson": "Ying Zhou",
       "email": "ying.zhou@qc.cuny.edu",
-      "phone": "(917) 319-4027",
+      "phone": "(718) 997-4609",
       "website": "https://techincubatorqc.com",
       "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
-      "type": "higher_ed",
+      "type": "education",
       "description": "Tech Incubator at Queens College provides access to innovation and technology support, training, and resources for entrepreneurs",
       "tags": [
         "incubator",
@@ -28,7 +28,7 @@
       "contactPerson": "Dr. John Blaho",
       "email": "John.Blaho@cuny.edu",
       "address": "555 W. 57th Street, New York, NY 10019 ",
-      "type": "higher_ed",
+      "type": "education",
       "description": "Helps develop scientific and engineering discoveries into useful technologies",
       "phone": "(212) 541-0000",
       "website": "https://www.cuny.edu/icorp",
@@ -46,7 +46,7 @@
       "contactPerson": "Ben Guttman",
       "email": "ben@queensny.org",
       "address": "120-55 Queens Blvd #309, Kew Gardens, NY 11424",
-      "type": "non_profit",
+      "type": "government_agency",
       "description": "Queens Economic Development Corporation is a non-profit organization that provides business support and community development",
       "phone": "(718) 263-0546",
       "website": "https://www.queensny.org",
@@ -97,7 +97,7 @@
       "contactPerson": "Yanki Tshering",
       "email": "ytshering@accompanycapital.org",
       "address": "78-27 37th Ave Suite #1, Jackson Heights, NY 11372",
-      "type": "non_profit",
+      "type": "investor_funder",
       "description": "Supports underserved entrepreneurs as they launch and grow their businesses with access to affordable credit, financial education, and training in technology and best business practices.",
       "phone": "(718) 565-8500",
       "website": "https://www.accompanycapital.org",
@@ -115,7 +115,7 @@
       "contactPerson": "Daria Seigle",
       "email": "daria.seigl@nycedc.com",
       "address": "One Liberty St, New York, NY 10006",
-      "type": "non_profit",
+      "type": "government_agency",
       "description": "NYCEDC serves as the official economic development organization for New York City",
       "phone": "(212) 312-3600",
       "website": "https://www.nycedc.com",
@@ -131,7 +131,7 @@
       "contactPerson": "Remy Arteaga",
       "email": "remy@cunystartups.com",
       "address": "55 Lexington Ave 2nd floor room 2, New York, NY 10010",
-      "type": "higher_ed",
+      "type": "education",
       "description": "CUNY's startup accelerator program",
       "phone": "(212) 541-0000",
       "website": "https://www.cunystartups.com",
@@ -148,7 +148,7 @@
       "contactPerson": "Dhairya Pujara",
       "email": "dhairya@ycenter.org",
       "address": "1701 Walnut St, Philadelphia, PA 19103",
-      "type": "corporation",
+      "type": "small_business",
       "description": "Ycenter is a global innovation agency, solving complex problems",
       "phone": "(215) 545-0000",
       "website": "https://www.ycenter.org",
@@ -182,7 +182,7 @@
       "contactPerson": "Glamis Haro",
       "email": "sbdc@lagcc.cuny.edu",
       "address": "30-20 Thomson Avenue, Long Island City, NY 11101",
-      "type": "non_profit",
+      "type": "government_agency",
       "description": "Small Business Development Center is a program that provides training and resources for entrepreneurs to start and grow their businesses",
       "phone": "(718) 482-5303",
       "website": "https://www.lagcc.cuny.edu/sbdc",
@@ -302,7 +302,7 @@
       "contactPerson": "Danila Blanco",
       "email": "danila@buildfellowship.com",
       "address": "860 Broadway 6th floor, New York, NY 10003",
-      "type": "corporation",
+      "type": "non_profit",
       "description": "Offer immigration solutions to global innovators, entrepreneurs, and experts while preparing U.S. college and university students for careers in STEM",
       "phone": "(212) 388-3888",
       "website": "https://www.openavenue.org",
@@ -336,7 +336,7 @@
       "contactPerson": "David Goldberg",
       "email": "david@edgestudio.com",
       "address": "115 W 45th St Floor 8, New York, NY 10036",
-      "type": "corporation",
+      "type":"small_business",
       "description": "Edge Studio provides voice training, dubbing, and translation services to the film, television, and media industries",
       "phone": "(555) 000-0000",
       "website": "https://example.com",
@@ -402,7 +402,7 @@
       "contactPerson": "Tasemere",
       "email": "info@thedmfirmnyc.com",
       "address": "1771 Monroe Avenue, Bronx, NY 10457 ",
-      "type": "corporation",
+      "type": "small_business",
       "description": "Business Development, Strategy, Project Management",
       "phone": "(347) 456-7890",
       "website": "https://www.thedmfirmnyc.com",
@@ -448,12 +448,94 @@
       ]
     },
     {
+      "id": "org27",
+      "name": "Queens College",
+      "contactPerson": "Peter Ore",
+      "email": "Peter.Ore@qc.cuny.edu",
+      "address": "65-30 Kissena Blvd, Flushing, NY 11367",
+      "type": "education",
+      "description": "Sociology/Data Analytics Program at Queens College",
+      "phone": "(212) 541-0000",
+      "website": "https://www.qc.cuny.edu",
+      "tags": [
+        "research",
+        "data analytics",
+        "data visualization",
+        "community projects"
+      ]
+    },
+    {
+      "id": "org28",
+      "name": "York College",
+      "contactPerson": "Thitima Srivatanakul",
+      "email": "tsrivatanakul@york.cuny.edu",
+      "address": "94-20 Guy R Brewer Blvd, Jamaica, NY 11451",
+      "type": "education",
+      "description": "Computer Science Student Intern Program at TIQC",
+      "phone": "(212) 541-0000",
+      "website": "https://www.york.cuny.edu",
+      "tags": [
+        "research",
+       "internship"
+      ]
+    },
+    {
+      "id": "org29",
+      "name": "St John's University",
+      "contactPerson": "James M. Kinsley",
+      "email": "kinsleyj@stjohns.edu",
+      "address": "81-98 170th St, Jamaica, NY 11432",
+      "type": "education",
+      "description": "business Student Consulting Program Consult Your Community offered to TIQC entrepreneurs",
+      "phone": "(212) 541-0000",
+      "website": "https://www.stjohns.edu",
+      "tags": [
+        "research",
+        "consulting",
+        "business"
+      ]
+    },
+    {
+      "id": "org30",
+      "name": "FUSIA Communications, Inc.",
+      "contactPerson": "Elizabeth Kay",
+      "email": "ekay@fusia.net",
+      "address": "2391 Bell Blvd #5 Bay Terrace NY 11360",
+      "type": "small_business",
+      "description": "Source students from other countries to intern in US companies",
+      "phone": "(917) 405-5678",
+      "website": "https://www.fusia.net/",
+      "tags": [
+        "internship",
+        "technology",
+        "entrepreneurship",
+        "business"
+      ]
+    },
+    {
+      "id": "org31",
+      "name": "Flushing Tech Meetup",
+      "contactPerson": "William Hutson",
+      "email": "w@hutson.gy",
+      "address": "Virtual",
+      "type": "non_profit",
+      "description": "Connect developer, entrepreneurs, and innovators in Flushing, NY",
+      "phone": "(347) 749-8734",
+      "website": "https://www.flushingtech.org/",
+      "tags": [
+        "prototyping",
+        "technology",
+        "entrepreneurship",
+        "business"
+      ]
+    },
+    {
       "id": "org99",
       "name": "FirstGen",
       "contactPerson": "Mat Kaliski",
       "email": "mat@acronymvc.com",
       "address": "virtual office",
-      "type": "corporation",
+      "type": "investor_funder",
       "description": "FirstGen is a venture capital firm that invests in early-stage startups led by first-generation entrepreneurs",
       "phone": "(212) 616-3200",
       "website": "https://www.firstgeneration.vc/",
@@ -466,32 +548,68 @@
     {
       "id": "cat_entrepreneurs",
       "name": "Entrepreneurs & Small Businesses",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description": "Individuals and early-stage companies actively building and growing ventures. Includes startups, consultants, and small enterprises driving innovation at the grassroots level."
     },
     {
       "id": "cat_education",
       "name": "Education & Talent",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description":"Schools, colleges, universities, and workforce development programs that provide knowledge, skills, and a pipeline of talent for the entrepreneurial ecosystem."
     },
     {
       "id": "cat_corporates",
       "name": "Corporates & Industry",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description":"Established companies and industry partners that contribute resources, expertise, and market access, often through innovation programs, CSR, or supply chains."
     },
     {
       "id": "cat_government",
       "name": "Government & Public Agencies",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description":"Local, state, and federal entities that shape the policy environment, provide funding, and deliver programs to support business and community development."
     },
     {
       "id": "cat_nonprofits",
       "name": "Non-profits & Community Orgs",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description":"Mission-driven organizations, chambers, and community groups offering advocacy, training, networks, and support services to entrepreneurs and residents."
     },
     {
       "id": "cat_investors",
       "name": "Investors & Funders",
-      "type": "category"
+      "type": "category",
+      "contactPerson": "Ying Zhou",
+      "email": "ying.zhou@qc.cuny.edu",
+      "phone": "(718) 997-4609",
+      "website": "https://techincubatorqc.com",
+      "address": "CEP Hall #2, 65-30 Kissena Blvd, Flushing 11367",
+      "description":"Angel investors, venture capital firms, banks, CDFIs, and foundations that provide the capital and financial support entrepreneurs need to launch and scale."
     }
   ],
   "relationships": [
@@ -505,6 +623,24 @@
       "source": "org12",
       "target": "org4",
       "type": "funding_relationship",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org4",
+      "target": "org8",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org20",
+      "target": "org24",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org20",
+      "target": "org9",
+      "type": "collaboration_partnership",
       "description": "joint support for entrepreneurs"
     },
     {
@@ -574,10 +710,10 @@
       "description": "CUNY I-Corp belongs to Education & Talent"
     },
     {
-      "source": "cat_nonprofits",
+      "source": "cat_government",
       "target": "org3",
       "type": "category_membership",
-      "description": "QEDC belongs to Non-profits & Community Orgs"
+      "description": "QEDC belongs to Government & Public Agencies"
     },
     {
       "source": "cat_nonprofits",
@@ -610,10 +746,10 @@
       "description": "CUNY Startups belongs to Education & Talent"
     },
     {
-      "source": "cat_corporates",
+     "source": "cat_entrepreneurs",
       "target": "org9",
       "type": "category_membership",
-      "description": "Ycenter belongs to Corporates & Industry"
+      "description": "Ycenter provides training, education, and talent development"
     },
     {
       "source": "cat_nonprofits",
@@ -622,7 +758,7 @@
       "description": "QPL belongs to Non-profits & Community Orgs"
     },
     {
-      "source": "cat_nonprofits",
+      "source": "cat_government",
       "target": "org11",
       "type": "category_membership",
       "description": "SBDC belongs to Non-profits & Community Orgs"
@@ -664,7 +800,7 @@
       "description": "AWS Academy belongs to Corporates & Industry"
     },
     {
-      "source": "cat_education",
+      "source": "cat_nonprofits",
       "target": "org18",
       "type": "category_membership",
       "description": "Open Avenue belongs to Education & Talent"
@@ -679,13 +815,13 @@
       "source": "cat_entrepreneurs",
       "target": "org20",
       "type": "category_membership",
-      "description": "Edge Studio belongs to Entrepreneurs & Small Businesses"
+      "description": "Edge Studio provides training, education, and talent development"
     },
     {
       "source": "cat_nonprofits",
       "target": "org21",
       "type": "category_membership",
-      "description": "NY Tech Alliance belongs to Non-profits & Community Orgs"
+      "description": "NY Tech Alliance provides training, education, and talent development"
     },
     {
       "source": "cat_nonprofits",
@@ -711,11 +847,42 @@
       "type": "category_membership",
       "description": "SBS belongs to Government & Public Agencies"
     },
+    
     {
       "source": "cat_nonprofits",
       "target": "org26",
       "type": "category_membership",
-      "description": "Inbia belongs to Non-profits & Community Orgs"
+      "description": "Inbia provides training, education, and talent development"
+    },
+    {
+      "source": "cat_nonprofits",
+      "target": "org31",
+      "type": "category_membership",
+      "description": "Flsushing Tech Meetup provides training, education, and talent development"
+    },
+    {
+      "source": "cat_entrepreneurs",
+      "target": "org30",
+      "type": "category_membership",
+      "description": "Fusia Communications, Inc.  provides training, education, and talent development internsship for international students "
+    },
+    {
+      "source": "cat_education",
+      "target": "org27",
+      "type": "category_membership",
+      "description": "Queens College provides training, education, and talent development "
+    },
+    {
+      "source": "cat_education",
+      "target": "org28",
+      "type": "category_membership",
+      "description": "York College provides training, education, and talent development "
+    },
+    {
+      "source": "cat_education",
+      "target": "org29",
+      "type": "category_membership",
+      "description": "St John's University provides training, education, and talent development "
     },
     {
       "source": "cat_investors",
