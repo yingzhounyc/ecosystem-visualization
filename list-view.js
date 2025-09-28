@@ -8,10 +8,13 @@ let sortBy = 'name';
 
 // Color scheme for organization types
 const colorScheme = {
-    corporation: '#e74c3c',
-    higher_ed: '#3498db',
+    corporation: '#3498db',
+    education: '#ff5b00',
     non_profit: '#2ecc71',
-    government_agency: '#f39c12'
+    government_agency: '#808080',
+    small_business: '#40E0D0', // Turquoise for small businesses
+    investor_funder: '#9b59b6', // Purple for investors/funders
+    category: '#E4a0f7', // Light purple for categories
 };
 
 // Initialize the list view
@@ -169,6 +172,7 @@ function createOrganizationCard(org) {
     const typeColor = colorScheme[org.type] || '#95a5a6';
     const initials = getInitials(org.name);
     const orgRelationships = getOrganizationRelationships(org.id);
+    const connectionBreakdown = getOrganizationConnectionBreakdown(org.id);
     
     return `
         <div class="organization-card" onclick="showOrganizationDetails('${org.id}')">
@@ -207,7 +211,7 @@ function createOrganizationCard(org) {
                 </div>
                 <div class="organization-detail">
                     <div class="organization-detail-icon">🔗</div>
-                    <span>${orgRelationships.length} connections</span>
+                    <span>${connectionBreakdown.total} connections</span>
                 </div>
                 ${org.tags ? `
                 <div class="organization-detail tags-detail">
@@ -247,11 +251,50 @@ function getOrganizationRelationships(orgId) {
     );
 }
 
+function getOrganizationConnectionBreakdown(orgId) {
+    const allRelationships = getOrganizationRelationships(orgId);
+    
+    const orgToOrgRelationships = allRelationships.filter(rel => 
+        rel.type === 'funding_relationship' || 
+        rel.type === 'collaboration_partnership' ||
+        rel.type === 'partnership' ||
+        rel.type === 'collaboration'
+    );
+    
+    const categoryRelationships = allRelationships.filter(rel => 
+        rel.type === 'category_link' || 
+        rel.type === 'category_membership'
+    );
+    
+    // Calculate indirect connections through categories
+    let indirectConnections = 0;
+    categoryRelationships.forEach(rel => {
+        const categoryId = rel.source === orgId ? rel.target : rel.source;
+        // Find all organizations connected to this category
+        const categoryOrgs = relationships.filter(catRel => 
+            (catRel.source === categoryId && catRel.type === 'category_membership') ||
+            (catRel.target === categoryId && catRel.type === 'category_link')
+        );
+        indirectConnections += categoryOrgs.length;
+    });
+    
+    const otherRelationships = allRelationships.length - orgToOrgRelationships.length - categoryRelationships.length;
+    
+    return {
+        total: orgToOrgRelationships.length + indirectConnections + otherRelationships,
+        orgToOrg: orgToOrgRelationships.length,
+        category: categoryRelationships.length,
+        indirect: indirectConnections,
+        other: otherRelationships
+    };
+}
+
 function showOrganizationDetails(orgId) {
     const org = organizations.find(o => o.id === orgId);
     if (!org) return;
     
     const orgRelationships = getOrganizationRelationships(orgId);
+    const connectionBreakdown = getOrganizationConnectionBreakdown(orgId);
     const typeColor = colorScheme[org.type] || '#95a5a6';
     
     // Get related organizations
@@ -306,7 +349,7 @@ function showOrganizationDetails(orgId) {
         </div>
         
         <div class="modal-section">
-            <h3>Relationships (${relatedOrgs.length})</h3>
+            <h3>Relationships (${connectionBreakdown.total})</h3>
             <div class="modal-relationships">
                 ${relatedOrgs.map(item => `
                     <div class="relationship-item">

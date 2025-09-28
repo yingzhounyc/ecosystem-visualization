@@ -420,14 +420,14 @@ function createLegend() {
     // Legend background
     const legendGroup = g.append('g')
         .attr('class', 'legend-group')
-        .attr('transform', `translate(${width - 200}, ${height - 120})`);
+        .attr('transform', `translate(${width - 230}, ${height - 170})`);
     
     // Legend background rectangle
     legendGroup.append('rect')
         .attr('x', 0)
         .attr('y', 0)
-        .attr('width', 190)
-        .attr('height', 110)
+        .attr('width', 220)
+        .attr('height', 160)
         .attr('fill', 'rgba(255, 255, 255, 0.95)')
         .attr('stroke', '#ddd')
         .attr('stroke-width', 1)
@@ -445,10 +445,13 @@ function createLegend() {
     
     // Legend items
     const legendData = [
-        { type: 'corporation', label: 'Corporation', color: colorScheme.corporation },
-        { type: 'higher_ed', label: 'Higher Education', color: colorScheme.higher_ed },
+        { type: 'corporation', label: 'Corporations & Industry', color: colorScheme.corporation },
+        { type: 'government_agency', label: 'Government & Public Agencies', color: colorScheme.government_agency },
+        { type: 'education', label: 'Education', color: colorScheme.education },
         { type: 'non_profit', label: 'Non-Profit', color: colorScheme.non_profit },
-        { type: 'government_agency', label: 'Government Agency', color: colorScheme.government_agency }
+        { type: 'small_business', label: 'Entrepreneurs & Small Businesses', color: colorScheme.small_business },
+        { type: 'investor_funder', label: 'Investors & Funders', color: colorScheme.investor_funder },
+        { type: 'category', label: 'Categories', color: colorScheme.category, shape: 'circle' }
     ];
     
     const legendItems = legendGroup.selectAll('.legend-item')
