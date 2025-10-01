@@ -414,33 +414,13 @@ function dragended(event, d) {
 }
 
 function createLegend() {
-    const width = parseInt(svg.style('width'));
-    const height = parseInt(svg.style('height'));
+    const legendContainer = d3.select('#legend');
     
-    // Legend background
-    const legendGroup = g.append('g')
-        .attr('class', 'legend-group')
-        .attr('transform', `translate(${width - 230}, ${height - 170})`);
-    
-    // Legend background rectangle
-    legendGroup.append('rect')
-        .attr('x', 0)
-        .attr('y', 0)
-        .attr('width', 220)
-        .attr('height', 160)
-        .attr('fill', 'rgba(255, 255, 255, 0.95)')
-        .attr('stroke', '#ddd')
-        .attr('stroke-width', 1)
-        .attr('rx', 8)
-        .style('filter', 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))');
+    // Clear existing legend
+    legendContainer.selectAll('*').remove();
     
     // Legend title
-    legendGroup.append('text')
-        .attr('x', 10)
-        .attr('y', 20)
-        .attr('font-size', '14px')
-        .attr('font-weight', 'bold')
-        .attr('fill', '#555')
+    legendContainer.append('h4')
         .text('Organization Types');
     
     // Legend items
@@ -451,31 +431,33 @@ function createLegend() {
         { type: 'non_profit', label: 'Non-Profit', color: colorScheme.non_profit },
         { type: 'small_business', label: 'Entrepreneurs & Small Businesses', color: colorScheme.small_business },
         { type: 'investor_funder', label: 'Investors & Funders', color: colorScheme.investor_funder },
-        { type: 'category', label: 'Categories', color: colorScheme.category, shape: 'circle' }
+        { type: 'category', label: 'Categories', color: colorScheme.category, shape: 'triangle' }
     ];
     
-    const legendItems = legendGroup.selectAll('.legend-item')
+    // Create legend items
+    const legendItems = legendContainer.selectAll('.legend-item')
         .data(legendData)
-        .enter().append('g')
-        .attr('class', 'legend-item')
-        .attr('transform', (d, i) => `translate(10, ${35 + i * 18})`);
+        .enter()
+        .append('div')
+        .attr('class', 'legend-item');
     
-    // Legend circles
-    legendItems.append('circle')
-        .attr('cx', 8)
-        .attr('cy', 0)
-        .attr('r', 6)
-        .attr('fill', d => d.color)
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 2);
-    
-    // Legend labels
-    legendItems.append('text')
-        .attr('x', 20)
-        .attr('y', 4)
-        .attr('font-size', '12px')
-        .attr('fill', '#666')
-        .text(d => d.label);
+    // Add symbols
+    legendItems.each(function(d) {
+        const item = d3.select(this);
+        
+        if (d.shape === 'triangle') {
+            item.append('div')
+                .attr('class', 'legend-symbol triangle')
+                .style('border-bottom-color', d.color);
+        } else {
+            item.append('div')
+                .attr('class', 'legend-symbol')
+                .style('background-color', d.color);
+        }
+        
+        item.append('span')
+            .text(d.label);
+    });
 }
 
 function filterNodes() {
