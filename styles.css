@@ -460,6 +460,13 @@ body {
     align-items: center;
 }
 
+.footer-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
 .footer-right {
     display: flex;
     align-items: center;
@@ -498,12 +505,31 @@ body {
     color: #764ba2;
 }
 
+.copyright {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
 /* Responsive footer */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+    
+    .footer-center {
+        order: 2;
+    }
+    
+    .footer-left {
+        order: 1;
+    }
+    
+    .footer-right {
+        order: 3;
     }
     
     .logo {
@@ -513,6 +539,10 @@ body {
     
     .contact-info {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
     }
 }

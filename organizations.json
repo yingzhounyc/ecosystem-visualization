@@ -619,15 +619,40 @@
       "type": "funding_relationship",
       "description": "joint support for entrepreneurs"
     },
+    
     {
-      "source": "org12",
-      "target": "org4",
+      "source": "org99",
+      "target": "org9",
       "type": "funding_relationship",
-      "description": "joint support for entrepreneurs"
+      "description": "Funding for entrepreneurs"
     },
     {
       "source": "org4",
       "target": "org8",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org10",
+      "target": "org27",
+      "type": "collaboration_partnership",
+      "description": "Queens College and Queens Public Library supporting each other's programs"
+    },
+    {
+      "source": "org17",
+      "target": "org27",
+      "type": "sponnor_partnership",
+      "description": "AWS Academy provide free training for Queens College students"
+    },
+    {
+      "source": "org18",
+      "target": "org27",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org26",
+      "target": "org14",
       "type": "collaboration_partnership",
       "description": "joint support for entrepreneurs"
     },
@@ -646,6 +671,12 @@
     {
       "source": "org3",
       "target": "org5",
+      "type": "collaboration_partnership",
+      "description": "joint support for entrepreneurs"
+    },
+    {
+      "source": "org9",
+      "target": "org21",
       "type": "collaboration_partnership",
       "description": "joint support for entrepreneurs"
     },

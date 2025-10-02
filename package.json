@@ -4,6 +4,8 @@
   "description": "A beautiful, interactive network visualization tool that displays organizations and their relationships as nodes and edges in a dynamic graph.",
   "main": "list-view.js",
   "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
